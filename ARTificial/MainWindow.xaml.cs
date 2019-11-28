@@ -36,7 +36,7 @@ namespace ARTificial
 
             if(openFile.ShowDialog() == true)
             {
-                file1.Text = "OwO u opened file";
+                file1.Text = "File loaded.";
                 
             }
         }
