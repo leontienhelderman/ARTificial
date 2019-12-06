@@ -14,6 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 using Microsoft.Win32;
+using Svg;
+using System.Drawing;
+using System.Drawing.Imaging;
 
 namespace ARTificial
 {
@@ -31,13 +34,25 @@ namespace ARTificial
         {
             OpenFileDialog openFile = new OpenFileDialog();
             openFile.InitialDirectory = "C:\\Users\\Lheld\\Pictures";
-            openFile.Filter = "svg images (*.svg) | *.svg";
+            openFile.Filter = "svg files (*.svg) | *.svg";
             openFile.RestoreDirectory = true;
 
             if(openFile.ShowDialog() == true)
             {
                 file1.Text = "File loaded.";
-                
+                var svgDocument = Svg.SvgDocument.Open("C:\\Users\\Lheld\\Pictures\\generated_image.svg");
+                svgDocument.ShapeRendering = SvgShapeRendering.Auto;
+
+                Bitmap bmp = svgDocument.Draw(12, 12);
+                bmp.Save("C:\\Users\\Lheld\\Pictures\\sample.png", ImageFormat.Png);
+
+                string selectedFile = openFile.FileName;
+                fileName.Content = selectedFile;
+                BitmapImage bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.UriSource = new Uri(selectedFile);
+                bitmap.EndInit();
+                image1.Source = bitmap;
             }
         }
     }
