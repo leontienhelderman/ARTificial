@@ -40,19 +40,14 @@ namespace ARTificial
             if(openFile.ShowDialog() == true)
             {
                 file1.Text = "File loaded.";
-                var svgDocument = Svg.SvgDocument.Open("C:\\Users\\Lheld\\Pictures\\generated_image.svg");
+
+                string path = openFile.FileName;
+                var svgDocument = Svg.SvgDocument.Open(path);
                 svgDocument.ShapeRendering = SvgShapeRendering.Auto;
+                Bitmap bmp = svgDocument.Draw((int)svgDocument.Width.Value, (int)svgDocument.Height.Value);
+                bmp.Save(@"C:\Users\Lheld\Pictures\sample.png", ImageFormat.Png);
 
-                Bitmap bmp = svgDocument.Draw(12, 12);
-                bmp.Save("C:\\Users\\Lheld\\Pictures\\sample.png", ImageFormat.Png);
-
-                string selectedFile = openFile.FileName;
-                fileName.Content = selectedFile;
-                BitmapImage bitmap = new BitmapImage();
-                bitmap.BeginInit();
-                bitmap.UriSource = new Uri(selectedFile);
-                bitmap.EndInit();
-                image1.Source = bitmap;
+                image1.Source = new BitmapImage(new Uri(@"C:\Users\Lheld\Pictures\sample.png"));
             }
         }
     }
