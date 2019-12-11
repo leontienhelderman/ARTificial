@@ -8,9 +8,12 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="fileButton" Content="Choose file" HorizontalAlignment="Left" Margin="101,364,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="205" Margin="75,82,0,0" VerticalAlignment="Top" Width="191"/>
+
         <TextBlock x:Name="file1" HorizontalAlignment="Left" Margin="101,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Press button to open file"/>
         <Label x:Name="fileName" Content="" HorizontalAlignment="Left" Margin="193,361,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.179,-0.578"/>
+        <Border BorderBrush="Yellow" BorderThickness="1.5" HorizontalAlignment="Left" Height="282.842712475" Margin="51,39,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="-0.833,0.476">
+            <Image x:Name="image1" Stretch="Fill"/>
+        </Border>
 
     </Grid>
 </Window>

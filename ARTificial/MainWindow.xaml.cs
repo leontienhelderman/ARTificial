@@ -30,8 +30,10 @@ namespace ARTificial
             InitializeComponent();
         }
 
+        int count = 0;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
             OpenFileDialog openFile = new OpenFileDialog();
             openFile.InitialDirectory = "C:\\Users\\Lheld\\Pictures";
             openFile.Filter = "svg files (*.svg) | *.svg";
@@ -45,9 +47,10 @@ namespace ARTificial
                 var svgDocument = Svg.SvgDocument.Open(path);
                 svgDocument.ShapeRendering = SvgShapeRendering.Auto;
                 Bitmap bmp = svgDocument.Draw((int)svgDocument.Width.Value, (int)svgDocument.Height.Value);
-                bmp.Save(@"C:\Users\Lheld\Pictures\sample.png", ImageFormat.Png);
+                bmp.Save(System.IO.Path.GetTempPath().ToString() + "sample" + count + ".png", ImageFormat.Png);
 
-                image1.Source = new BitmapImage(new Uri(@"C:\Users\Lheld\Pictures\sample.png"));
+                image1.Source = new BitmapImage(new Uri(System.IO.Path.GetTempPath().ToString() + "sample" + count + ".png"));
+                count++;
             }
         }
     }
