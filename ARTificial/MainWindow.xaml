@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ARTificial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" MinWidth="700" MinHeight="450">
     <Grid>
         <Button x:Name="fileButton" Content="Choose file" HorizontalAlignment="Left" Margin="101,364,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-
-        <TextBlock x:Name="file1" HorizontalAlignment="Left" Margin="101,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Press button to open file"/>
+        <TextBlock x:Name="file1" HorizontalAlignment="Left" Margin="72,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Press button to open file" RenderTransformOrigin="-0.232,2.331"/>
         <Label x:Name="fileName" Content="" HorizontalAlignment="Left" Margin="193,361,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.179,-0.578"/>
-        <Border BorderBrush="Yellow" BorderThickness="1.5" HorizontalAlignment="Left" Height="282.842712475" Margin="51,39,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="-0.833,0.476">
-            <Image x:Name="image1" Stretch="Fill"/>
+        <Border BorderBrush="Black" BorderThickness="1.5" HorizontalAlignment="Left" Height="283" Margin="42,52,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="-0.833,0.476">
+            <Image x:Name="image1" Stretch="Uniform"/>
         </Border>
+        <Button x:Name="sendButton" Content="Send to 3D printer" HorizontalAlignment="Left" Margin="507,361,0,0" VerticalAlignment="Top" Width="115"/>
 
     </Grid>
 </Window>
