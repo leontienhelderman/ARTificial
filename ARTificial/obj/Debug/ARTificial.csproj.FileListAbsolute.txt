@@ -18,3 +18,22 @@ C:\Users\LHeld\source\repos\ARTificial\ARTificial\bin\Debug\Svg.dll
 C:\Users\LHeld\source\repos\ARTificial\ARTificial\bin\Debug\Fizzler.xml
 C:\Users\LHeld\source\repos\ARTificial\ARTificial\bin\Debug\Svg.xml
 C:\Users\LHeld\source\repos\ARTificial\ARTificial\obj\Debug\ARTificial.csproj.CopyComplete
+D:\Fontys\New folder\Repos\ARTificial\bin\Debug\ARTificial.exe.config
+D:\Fontys\New folder\Repos\ARTificial\bin\Debug\ARTificial.exe
+D:\Fontys\New folder\Repos\ARTificial\bin\Debug\ARTificial.pdb
+D:\Fontys\New folder\Repos\ARTificial\bin\Debug\Fizzler.dll
+D:\Fontys\New folder\Repos\ARTificial\bin\Debug\Svg.dll
+D:\Fontys\New folder\Repos\ARTificial\bin\Debug\Fizzler.xml
+D:\Fontys\New folder\Repos\ARTificial\bin\Debug\Svg.xml
+D:\Fontys\New folder\Repos\ARTificial\obj\Debug\ARTificial.csprojAssemblyReference.cache
+D:\Fontys\New folder\Repos\ARTificial\obj\Debug\MainWindow.g.cs
+D:\Fontys\New folder\Repos\ARTificial\obj\Debug\App.g.cs
+D:\Fontys\New folder\Repos\ARTificial\obj\Debug\ARTificial_MarkupCompile.cache
+D:\Fontys\New folder\Repos\ARTificial\obj\Debug\ARTificial_MarkupCompile.lref
+D:\Fontys\New folder\Repos\ARTificial\obj\Debug\MainWindow.baml
+D:\Fontys\New folder\Repos\ARTificial\obj\Debug\ARTificial.g.resources
+D:\Fontys\New folder\Repos\ARTificial\obj\Debug\ARTificial.Properties.Resources.resources
+D:\Fontys\New folder\Repos\ARTificial\obj\Debug\ARTificial.csproj.GenerateResource.cache
+D:\Fontys\New folder\Repos\ARTificial\obj\Debug\ARTificial.csproj.CopyComplete
+D:\Fontys\New folder\Repos\ARTificial\obj\Debug\ARTificial.exe
+D:\Fontys\New folder\Repos\ARTificial\obj\Debug\ARTificial.pdb

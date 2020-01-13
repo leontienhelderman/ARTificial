@@ -13,7 +13,11 @@
         <Border BorderBrush="Black" BorderThickness="1.5" HorizontalAlignment="Left" Height="283" Margin="42,52,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="-0.833,0.476">
             <Image x:Name="image1" Stretch="Uniform"/>
         </Border>
-        <Button x:Name="sendButton" Content="Send to 3D printer" HorizontalAlignment="Left" Margin="507,361,0,0" VerticalAlignment="Top" Width="115"/>
+        <Button x:Name="ConvertButton" Content="Convert to G-code" HorizontalAlignment="Left" Margin="507,361,0,0" VerticalAlignment="Top" Width="115"/>
+        <TextBox x:Name="TextboxDPI" HorizontalAlignment="Left" Height="23" Margin="316,76,0,0" TextWrapping="Wrap" Text="25" VerticalAlignment="Top" Width="29"/>
+        <Label Content="DPI" HorizontalAlignment="Left" Margin="312,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.55,0.591"/>
+        <Label Content="Output file path" HorizontalAlignment="Left" Margin="312,104,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextboxOutputPath" HorizontalAlignment="Left" Height="23" Margin="312,134,0,0" TextWrapping="Wrap" Text="C:\GCode\example.gcode" VerticalAlignment="Top" Width="163"/>
 
     </Grid>
 </Window>
