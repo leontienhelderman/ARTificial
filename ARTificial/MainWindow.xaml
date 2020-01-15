@@ -5,19 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ARTificial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" MinWidth="700" MinHeight="450">
-    <Grid>
+        Title="MainWindow" Height="430.8" Width="500" MinWidth="500" MinHeight="422">
+    <Grid Margin="0,0,3.6,0">
         <Button x:Name="fileButton" Content="Choose file" HorizontalAlignment="Left" Margin="101,364,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <TextBlock x:Name="file1" HorizontalAlignment="Left" Margin="72,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Press button to open file" RenderTransformOrigin="-0.232,2.331"/>
         <Label x:Name="fileName" Content="" HorizontalAlignment="Left" Margin="193,361,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.179,-0.578"/>
         <Border BorderBrush="Black" BorderThickness="1.5" HorizontalAlignment="Left" Height="283" Margin="42,52,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="-0.833,0.476">
-            <Image x:Name="image1" Stretch="Uniform"/>
+            <Image x:Name="image1" Stretch="Uniform" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
         </Border>
-        <Button x:Name="ConvertButton" Content="Convert to G-code" HorizontalAlignment="Left" Margin="507,361,0,0" VerticalAlignment="Top" Width="115"/>
+        <Button x:Name="ConvertButton" Content="Convert to G-code" HorizontalAlignment="Left" Margin="295,364,0,0" VerticalAlignment="Top" Width="115" Click="ConvertButton_Click"/>
         <TextBox x:Name="TextboxDPI" HorizontalAlignment="Left" Height="23" Margin="316,76,0,0" TextWrapping="Wrap" Text="25" VerticalAlignment="Top" Width="29"/>
-        <Label Content="DPI" HorizontalAlignment="Left" Margin="312,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.55,0.591"/>
-        <Label Content="Output file path" HorizontalAlignment="Left" Margin="312,104,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="TextboxOutputPath" HorizontalAlignment="Left" Height="23" Margin="312,134,0,0" TextWrapping="Wrap" Text="C:\GCode\example.gcode" VerticalAlignment="Top" Width="163"/>
+        <Label Content="DPI" HorizontalAlignment="Left" Margin="316,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.55,0.591" Width="33"/>
+        <TextBlock x:Name="ConvertText" HorizontalAlignment="Left" Margin="305,341,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="30">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
 
     </Grid>
 </Window>
