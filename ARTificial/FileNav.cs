@@ -22,6 +22,7 @@ namespace ARTificial
 
         public void OpenFile()
         {
+            // Opens file directory for user to choose an svg file.
             OpenFileDialog openFile = new OpenFileDialog();
             openFile.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             openFile.Filter = "svg files (*.svg) | *.svg";
@@ -42,6 +43,7 @@ namespace ARTificial
 
         public string GetSaveFilePath()
         {
+            // Opens file directory for user to choose where to save the gcode file.
             SaveFileDialog saveFile = new SaveFileDialog()
             {
                 FileName = "G-Code.GCODE",

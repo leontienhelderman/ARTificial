@@ -22,7 +22,7 @@ namespace ARTificial
 
         public void LaunchCommandLineApp()
         {
-            // Use ProcessStartInfo class
+            // Use ProcessStartInfo class.
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.CreateNoWindow = true;
             startInfo.UseShellExecute = true;

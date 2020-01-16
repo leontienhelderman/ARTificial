@@ -13,8 +13,10 @@ namespace ARTificial
 {
     public class Image
     {
+        // int so different svg's get different file names.
         private int count = 0;
 
+        // Converts chosen svg to png.
         public BitmapImage ConvertToPng(OpenFileDialog openFile)
         {
             string path = openFile.FileName;
