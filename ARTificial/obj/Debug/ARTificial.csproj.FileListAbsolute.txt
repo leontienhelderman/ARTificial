@@ -37,3 +37,10 @@ D:\Fontys\New folder\Repos\ARTificial\obj\Debug\ARTificial.csproj.GenerateResour
 D:\Fontys\New folder\Repos\ARTificial\obj\Debug\ARTificial.csproj.CopyComplete
 D:\Fontys\New folder\Repos\ARTificial\obj\Debug\ARTificial.exe
 D:\Fontys\New folder\Repos\ARTificial\obj\Debug\ARTificial.pdb
+D:\Fontys\Visual Studio repos\Repos\ARTificial\obj\Debug\ARTificial.csprojAssemblyReference.cache
+D:\Fontys\Visual Studio repos\Repos\ARTificial\obj\Debug\MainWindow.g.cs
+D:\Fontys\Visual Studio repos\Repos\ARTificial\obj\Debug\App.g.cs
+D:\Fontys\Visual Studio repos\Repos\ARTificial\obj\Debug\ARTificial_MarkupCompile.cache
+D:\Fontys\Visual Studio repos\Repos\ARTificial\obj\Debug\ARTificial_MarkupCompile.lref
+D:\Fontys\Visual Studio repos\Repos\ARTificial\obj\Debug\ARTificial.exe
+D:\Fontys\Visual Studio repos\Repos\ARTificial\obj\Debug\ARTificial.pdb

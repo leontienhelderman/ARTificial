@@ -11,11 +11,13 @@ namespace ARTificial
     {
         private MainWindow mainWindow;
         private Image image;
+
+        // "openFilePath" gets defined here because it needs to be reachable outside of the OpenFile() function.
         private string openFilePath;
-        private string saveFilePath;
 
         public FileNav(MainWindow mainWindow)
         {
+            // "openFilePath doesn't get initialized here because it gets its value in the OpenFile() function."
             this.mainWindow = mainWindow;
             image = new Image();
         }
@@ -24,7 +26,11 @@ namespace ARTificial
         {
             // Opens file directory for user to choose an svg file.
             OpenFileDialog openFile = new OpenFileDialog();
+            
+            // Opens "my documents" folder in file explorer.
             openFile.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            
+            // Filters so only svg's can open.
             openFile.Filter = "svg files (*.svg) | *.svg";
             openFile.RestoreDirectory = true;
 
@@ -54,7 +60,8 @@ namespace ARTificial
 
             if (saveFile.ShowDialog() == true)
             {
-                saveFilePath = saveFile.FileName;
+                // "saveFilePath" gets defined and initialized here because it only needs to be reached within GetSaveFilePath().
+                string saveFilePath = saveFile.FileName;
                 return saveFilePath;
             }
             return "";
